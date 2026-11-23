@@ -5,7 +5,7 @@ system,
 
 buildGoModule rec {
   pname = "renovate-pretty-log";
-  version = "0.7.0"; # renovate: datasource=gitlab-tags depName=tanna.dev/renovate-pretty-log
+  version = "0.8.1"; # renovate: datasource=gitlab-tags depName=tanna.dev/renovate-pretty-log
 
   src = fetchFromGitLab {
     owner = "tanna.dev";
