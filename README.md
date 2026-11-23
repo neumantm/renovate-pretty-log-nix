@@ -19,7 +19,7 @@ nix shell github:neumantm/renovate-pretty-log-nix -c renovate-pretty-log-tui -pa
 For the text-to-JSON utility, run:
 
 ```sh
-nix shell github:neumantm/renovate-pretty-log-nix -c renovate-text-to-json -path <path-to-log-file>
+nix shell github:neumantm/renovate-pretty-log-nix -c renovate-text-to-json < <path-to-log-text-file>
 ```
 
 For further usage info see the [renovate-pretty-log documentation](https://gitlab.com/tanna.dev/renovate-pretty-log).
