@@ -13,10 +13,6 @@ jobs:
     - name: Install nix
       uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31
     - name: Build
-      env:
-        NIXPKGS_ALLOW_UNFREE: 1
-      run: nix build --impure
+      run: nix build
     - name: Flake Check
-      env:
-        NIXPKGS_ALLOW_UNFREE: 1
-      run: nix flake check --impure --all-systems
+      run: nix flake check --all-systems
